@@ -4,7 +4,10 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
     <link rel="stylesheet" type = "text/css" href= "style.css"
 
     <!-- Bootstrap CSS -->
@@ -13,7 +16,7 @@
 <style>
 
 body {
-background-image: url(https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+background-image: url(https://images.unsplash.com/photo-1440407876336-62333a6f010f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80);
 background-repeat: no-repeat;
 background-position: top;
 height: max-content;
@@ -29,7 +32,7 @@ height: max-content;
 
   <body class="mt-1">
 
-    <nav class="navbar navbar-light" style="background-color: lightgreen;">
+    <nav class="navbar navbar-light" style="background-color: lightblue;">
       <div class="container">
         <a class="navbar-brand" href="#">Our Best Time</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +52,8 @@ height: max-content;
 
     <div class="jumbotron jumbotron-fluid">
       <div class="container text-center">
-        <img src="nuel1.jpeg" width ="40%" class="rounded-circle img-thumbnail">
+        <img src="nuel1.jpeg"  data-aos="flip-up" data-aos-delay="50"
+        data-aos-duration="1000" width ="40%" class="rounded-circle img-thumbnail">
         <h1 class="display-4"> Nuel Erna Sesi</h1>
         <p class="lead"></p>
       </div>
@@ -60,9 +64,11 @@ height: max-content;
 <br>
 
 
-    <iframe width="650" height="315" src="https://www.youtube.com/embed/wdHeiVf0mds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe data-aos="zoom-in-left" data-aos-delay="50"
+    data-aos-duration="1000" width="650" height="315" src="https://www.youtube.com/embed/wdHeiVf0mds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-    <iframe width="650" height="315" src="https://www.youtube.com/embed/8e3uPYDf5lY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe data-aos="zoom-in-left" data-aos-delay="50"
+    data-aos-duration="1000" width="650" height="315" src="https://www.youtube.com/embed/8e3uPYDf5lY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
 <br>
@@ -71,14 +77,14 @@ height: max-content;
 
     <div class="container">
 
-<div class ="row mb-4">
+<div class ="row mb-4" data-aos="zoom-in-up" data-aos-duration="3000">
 <div class ="col text-center" >
 <h2>Best Friends Forever</h2>
 </div>
 </div>
 
 <div class ="row justify-content-center">
-<div class ="col-md-5" >
+<div class ="col-md-5" data-aos="fade-right" data-aos-duration="1000" >
   <br>
 <p >Best friends are one of life's truly great joys. 
   Deep friendships like these offer solace during hard 
@@ -90,7 +96,7 @@ height: max-content;
 
 </div>
 
-<div class ="col-md-5">
+<div class ="col-md-5" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
   <br>
 <p>
   Thank you for being a friend! 
@@ -112,7 +118,9 @@ height: max-content;
 <section id="portofolio" class="portofolio bg-light">
     <div class="container">
 
-    <div class="row mb-4 pt-4">
+    <div class="row mb-4 pt-4" data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1500">
 
     <div class ="col text-center" >
 
@@ -122,9 +130,9 @@ height: max-content;
 
     </div>
 
-
-
-    <div class="row mb-3">
+    <div class="row mb-3"data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine" > 
 
     <div class ="col-md text-center" >
 
@@ -139,7 +147,9 @@ height: max-content;
     </div>
 
 
-        <div class ="col-md text-center" >
+        <div class ="col-md text-center" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
 
           <div class="card">
               <img src="nuel2.jpeg" width="550" height="300" class="card-img-top" alt="...">
@@ -154,7 +164,9 @@ height: max-content;
         </div>
 
 
-            <div class ="col-md text-center" >
+            <div class ="col-md text-center" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000" >
 
               <div class="card">
                   <img src="nuel3.jpeg" width="550" height="300" alt="...">
@@ -166,15 +178,14 @@ height: max-content;
 
             </div>
 
-
 <br>
 
     </div>
 
-
 <br>
 
-    <div class="row mb-3">
+    <div class="row mb-3" data-aos="fade-up"
+    data-aos-anchor-placement="center-bottom">
 
     <div class ="col-md text-center" >
 
@@ -189,7 +200,8 @@ height: max-content;
     </div>
 
 
-        <div class ="col-md text-center" >
+        <div class ="col-md text-center" data-aos="fade-up"
+        data-aos-anchor-placement="top-center">
 
           <div class="card">
               <img src="nuel8.jpeg" width="550" height="300" class="card-img-top" alt="...">
@@ -202,7 +214,8 @@ height: max-content;
         </div>
 
 
-            <div class ="col-md text-center" >
+            <div class ="col-md text-center" data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom" >
 
               <div class="card">
                   <img src="nuel9.jpeg" width="550" height="300" class="card-img-top" alt="...">
@@ -228,7 +241,7 @@ height: max-content;
 
     <id class ="container">
     
-      <id class ="row text-center" mb-3>
+      <id class ="row text-center" mb-3 data-aos="zoom-out-up">
     
     <id class ="col">
     
@@ -242,7 +255,8 @@ height: max-content;
     
       <div class ="row">
 
-        <div class ="col-md-6 col-lg-4 mb-3">
+        <div class ="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="50"
+        data-aos-duration="1000">
 
           <div class ="pokemon-box">
 
@@ -250,15 +264,16 @@ height: max-content;
 
             </h4>
 
-            <img src="nuel4.jpeg" width="550" height="300" alt="pokemon" class ="pokemon-img"> 
+            <img src="nuel4.jpeg" width="450" height="300" alt="pokemon" class ="pokemon-img"> 
 
-            <a href="" class="btn btn-light keyboard-detail-button">Show Details</a>
+            <a href="" class="btn btn-light keyboard-detail-button"></a>
 
           </div>
 
         </div>
 
-        <div class ="col-md-6 col-lg-4 mb-3">
+        <div class ="col-md-6 col-lg-4 mb-3" data-aos="flip-right" data-aos-delay="50"
+        data-aos-duration="1000">
 
           <div class ="pokemon-box">
 
@@ -266,15 +281,16 @@ height: max-content;
 
             </h4>
 
-            <img src="nuel5.jpeg" width="550" height="300" alt="pokemon" class ="pokemon-img"> 
+            <img src="nuel5.jpeg" width="450" height="300" alt="pokemon" class ="pokemon-img"> 
 
-            <a href="" class="btn btn-light keyboard-detail-button">Show Details</a>
+            <a href="" class="btn btn-light keyboard-detail-button"></a>
 
           </div>
 
         </div>
 
-        <div class ="col-md-6 col-lg-4 mb-3">
+        <div class ="col-md-6 col-lg-4 mb-3" data-aos="flip-up" data-aos-delay="50"
+        data-aos-duration="1000">
 
           <div class ="pokemon-box">
 
@@ -282,9 +298,9 @@ height: max-content;
 
             </h4>
 
-            <img src="nuel6.jpeg" width="550" height="300" alt="pokemon" class ="pokemon-img"> 
+            <img src="nuel6.jpeg" width="450" height="300" alt="pokemon" class ="pokemon-img"> 
 
-            <a href="" class="btn btn-light keyboard-detail-button">Show Details</a>
+            <a href="" class="btn btn-light keyboard-detail-button"></a>
 
           </div>
 
@@ -296,96 +312,89 @@ height: max-content;
     </id>
     
     </section>
+
+
+    <section id ="my pokemon">
+
+      <id class ="container">
+      
+        <id class ="row text-center" mb-3 data-aos="zoom-out-up">
+      
+      <id class ="col">
+      
+        <h2>
+          Our Narsis Friend With her Favorite Food
+        </h2>
+      
+      </id>
+      
+        </id>
+      
+        <div class ="row">
+  
+          <div class ="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="50"
+          data-aos-duration="1000">
+  
+            <div class ="pokemon-box">
+  
+              <h4 class ="pikachu">Punk Girl
+  
+              </h4>
+  
+              <img src="sesi1.jpeg" width="450" height="300" alt="pokemon" class ="pokemon-img"> 
+  
+              <a href="" class="btn btn-light keyboard-detail-button"></a>
+  
+            </div>
+  
+          </div>
+  
+          <div class ="col-md-6 col-lg-4 mb-3" data-aos="flip-right" data-aos-delay="50"
+          data-aos-duration="1000">
+  
+            <div class ="pokemon-box">
+  
+              <h4 class ="pikachu">Pete Is Good
+  
+              </h4>
+  
+              <img src="pete1.jpeg" width="450" height="300" alt="pokemon" class ="pokemon-img"> 
+  
+              <a href="" class="btn btn-light keyboard-detail-button"></a>
+  
+            </div>
+  
+          </div>
+  
+          <div class ="col-md-6 col-lg-4 mb-3" data-aos="flip-up" data-aos-delay="50"
+          data-aos-duration="1000">
+  
+            <div class ="pokemon-box">
+  
+              <h4 class ="pikachu">Kere Face
+  
+              </h4>
+  
+              <img src="sesi2.jpeg" width="450" height="300" alt="pokemon" class ="pokemon-img"> 
+  
+              <a href="" class="btn btn-light keyboard-detail-button"></a>
+  
+            </div>
+  
+          </div>
+  
+  
+  
+        </div>
+      </id>
+      
+      </section>
+  
     
-<section id="contact" class="contact mb-5">
-<div class="container">
 
-<div class="row">
+<iframe data-aos="zoom-in" width="650" height="350" src="https://www.youtube.com/embed/zbGsfwKDkps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-  <div class="col text-center">
-
-<h2>Contact Us</h2>
-
-  </div>
-
-</div>
-
-
-<div class="row justify-content-center">
-
-  <div class="col-lg-4">
-
-    <div class="card text-white bg-info mb-3">
-      <div class="card-body text-center">
-        <h5 class="card-title">Contact Us</h5>
-        <p class="card-text">
-          Celestial Kingdom
-        Heavenly Father's Kingdom Arzt 1288 Slyarin</p>
-      </div>
-    </div>
-
-    <ul class="list-group">
-      <li class="list-group-item">Location</li>
-      <li class="list-group-item">My Office</li>
-      <li class="list-group-item">Celestial Kingdom</li>
-      <li class="list-group-item">Best Friends</li>
-      <li class="list-group-item">+8888888</li>
-    </ul>
-
-  </div>
-
-
-  <div class="col-lg-6">
-
-        <form>
-
-          <div class="form-group">
-            <label for="Name">Name</label>
-            <input type="email" class="form-control" id="Name">
-          </div>
-
-
-          <div class="form-group">
-            <label for="Email">Email</label>
-            <input type="email" class="form-control" id="Email">
-          </div>
-
-
-          <div class="form-group">
-            <label for="Telephone">Telephone</label>
-            <input type="email" class="form-control" id="Telephone">
-          </div>
-
-
-          <div class="form-group">
-            <label for="Message">Message</label>
-            <textarea name="Message" id="Message" class="form-control"> </textarea>
-          </div>
-
-          <div class ="form-group">
-
-            <button type="button" class="btn btn-primary mt-3" >Send here</button>
-
-          </div>
-
-        </form>
-
-  </div>
-
-
-
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<iframe width="650" height="350" src="https://www.youtube.com/embed/zbGsfwKDkps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<iframe width="650" height="350" src="https://www.youtube.com/embed/EiDYFidajeE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe data-aos="zoom-in-down" width="650" height="350" src="https://www.youtube.com/embed/EiDYFidajeE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
 <br>
@@ -424,6 +433,10 @@ height: max-content;
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <script type="text/javascript" src="vanilla-tilt.min.js"></script>
     <script type="text/javascript">
