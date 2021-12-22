@@ -1,0 +1,38 @@
+.jumbotron {
+
+    background-image: url(pem2.jpg);
+    background-size: auto;
+    height: 350px;
+    width: 100%;
+    color: wheat;
+    
+    }
+
+.jumbotron .display-4 {
+ 
+    margin-top: 10px;
+    font-size: 100px;
+    text-align: center;
+    color: white;
+
+}
+
+.jumbotron h2{
+
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+}
+
+.jumbotron h3{
+
+    text-align: center;
+    color: white;
+}
+
+.hr {
+
+    border-color: aqua;
+    width: 200px;
+    border-width: 3px;
+}
