@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" id="home">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -28,18 +28,12 @@ body {
 
   <body id ="page-top">
 
-    <div class="jumbotron">
-      <h1 class="display-4">English Online Course</h1>
-      <h2>Welcome To The Most Fascinating Online Course</h2>
-      <hr class="my-4">
-      <h3>We Provide You A Better Solution To Learn English</h3>
-    </div>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-success" id ="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-light bg-success fixed-top" id ="mainNav" >
 
       <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="usa.jpg" alt="" width="50" height="50" class="me-2">
+        <a class="navbar-brand page-scroll" href="#home">
+          <img src="usa.jpg" alt="" width="40" height="30" class="me-2">
            <strong>English</strong> <strong>Online</strong><strong> Course</strong>
         </a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,26 +47,27 @@ body {
 
         <ul class="navbar-nav ms-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#"><strong>Home</strong> <span class="sr-only"></span></a>
+            <a class="nav-link" href="#home" class="page-scroll"><strong>Home</strong> <span class="sr-only"></span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><strong>About</strong></a>
+            <a class="nav-link" href="#aboutus" class="page-scroll"><strong>About</strong></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><strong>Levels</strong>
+            <a class="nav-link" href="#portofolio" class="page-scroll"><strong>Levels</strong>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><strong>Mission</strong></a>
+            <a class="nav-link" href="#mission" class="page-scroll"><strong>Mission</strong></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><strong>Contact Us</strong>
+            <a class="nav-link" href="#contact" class="page-scroll"><strong>Contact Us</strong>
           </a>
           </li>
         </ul>
       </div>
     </div>
     </nav>
+
 
     <div class="container">
     <div id="carouselExampleIndicators" class="carousel slide mt-5" data-bs-ride="carousel">
@@ -111,9 +106,19 @@ body {
     </div>
   </div>
 
+
+  <div class="jumbotron"> 
+    <h1 class="display-4">English Online Course </h1>
+    <h2>Welcome To The Most Fascinating Online Course</h2>
+    <hr class="my-4">
+    <h3>We Provide You A Better Solution To Learn English</h3>
+  </div>
+
+
+
 <br><br><br>
 
-  <div class ="row mb-4" data-aos="zoom-in-up" data-aos-duration="3000">
+  <div class ="row mb-4" data-aos="zoom-in-up" data-aos-duration="3000" id ="aboutus">
     <div class ="col text-center mt-2" >
     <h2>About Us</h2>
     </div>
@@ -452,7 +457,7 @@ body {
 </section>
     
 
-<div class ="row mb-4" data-aos="zoom-in-up" data-aos-duration="3000">
+<div class ="row mb-4" data-aos="zoom-in-up" data-aos-duration="3000" id="mission">
   <div class ="col text-center mt-2" >
   <h2>Our Mission</h2>
   </div>
@@ -496,7 +501,7 @@ body {
 
     <div class="card text-white bg-info mb-3">
       <div class="card-body text-center">
-        <h5 class="card-title">Contact Us</h5>
+        <h5 class="card-title" id = "contact">Contact Us</h5>
         <p class="card-text">
           Please Fill The Form
           To Know Your Best Time
@@ -651,6 +656,9 @@ body {
       .catch(error => console.error('Error!', error.message))
   })
 </script>
+
+
+<script src="script.js"></script>
 
   </body>
 </html>
