@@ -8,15 +8,15 @@ body {
 
     background-image: url(pem2.jpg);
     background-size: auto;
-    height: 350px;
+    height: 300px;
     width: 100%;
-    color: wheat;
+    background-position: center;
     
     }
 
 .jumbotron .display-4 {
  
-    margin-top: 10px;
+    margin-top: 70px;
     font-size: 100px;
     text-align: center;
     color: white;
